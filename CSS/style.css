@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 800');
+
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: #fff;
+    line-height: normal;
+}
+
+a {
+    display: block;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 2.7rem;
+}
+/*header start*/
+
+header.main-header {
+    background-color: #0c0c0c;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+nav.header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.logo .align {
+    font-family: "Open Sans ExtraBold", sans-serif;
+    font-weight: 800;
+    color: #fff;
+    font-size: 2.8rem;
+    position: absolute;
+    top: 0.6rem;
+    left: 5.3rem;
+}
+
+nav.header .logo div span {
+    color: #ff9800;
+}
+nav.header ul {
+    margin-bottom: 0;
+}
+nav.header ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: all 1s ease-out 0s;
+}
+
+nav.header ul a:hover {
+    background-color: #354053;
+    border-radius: 5px;
+}
+
+nav.header li {
+    margin-right: 1.1rem;
+}
+
+nav.header li:last-child {
+    margin-right: 0;
+}
+
+/*header end*/
+
+/*greeting start*/
+div.greeting {
+    background-image: url("../IMG/mainimage.png");
+    height: 100vh;
+    background-size: cover;
+}
+
+div.greeting .about {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 21.5rem;
+}
+
+div.greeting .about h3:first-child {
+     font-weight: 800;
+     font-size: 3.5rem;
+     text-align: center;
+     line-height: 4.5rem;
+ }
+
+div.greeting .about p {
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    color: #f1f1f1;
+    width: 60%;
+    margin: 0 auto;
+}
+
+div.greeting .about p span,
+div.greeting .about h3 span{
+    color: #f49a14;
+}
+
+/*greeting end*/
+/*Skill block start*/
+div.background-container {
+    background-image: url('../IMG/mainimage2.png');
+    background-size: cover;
+    padding-top: 150px;
+}
+
+article.my-skills {
+    padding: 0 2.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article.my-skills .block {
+    font-size: 1.6rem;
+    color: #e8e8e8;
+    position: relative;
+    margin-bottom: 6.4rem;
+}
+
+article.my-skills .block img {
+    position: absolute;
+}
+
+article.my-skills .block h3 {
+    padding-left: 40%;
+}
+
+article.my-skills .block p {
+    margin-top: 2.8rem;
+}
+/*Skill block end*/
+/*My work start*/
+section.my-work {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.my-work .img {
+    width: 32%;
+    height: 280px;
+    background-size: cover;
+}
+
+section.my-work .img a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all 1s ease-out 0s;
+
+}
+
+section.my-work .img a div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 3px solid #f49a14;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    opacity: 0;
+    transition: all 1s ease-out 0s;
+
+}
+
+section.my-work .img a:hover div {
+    opacity: 1;
+}
+
+section.my-work .img a:hover {
+    background: rgba(61, 67, 65, 0.7);
+}
+
+.img1 {
+    background: url("../IMG/p4.png") no-repeat;
+}
+.img2 {
+    background: url("../IMG/p5.png") no-repeat;
+}
+.img3 {
+    background: url("../IMG/p4.png") no-repeat;
+}
+
+
+/*My work end*/
+
+/*Form start*/
+div.form {
+    padding-top: 100px;
+}
+div.form label {
+    margin-bottom: 15px;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 2.7rem;
+}
+div.form input,
+div.form textarea {
+    color: #a9aaad;
+    padding: 20px 20px 20px 42px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #354053;
+    border-radius: 5px;
+    border: none;
+    height: 60px;
+    font-size: 1.8rem;
+}
+
+div.form input:focus,
+div.form textarea:focus {
+    border: 2px solid #8c5e1b;
+    border-radius: 5px;
+    outline: none;
+    background-color: #354053;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #354053 !important;
+    -webkit-text-fill-color: #a9aaad !important;
+
+}
+
+div.form textarea {
+    padding: 20px 20px 20px 42px;
+    height: 230px;
+    resize:none;
+    overflow: auto;
+}
+
+div.form textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+div.form form>div {
+    position: relative;
+}
+
+div.form .align-icon {
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.form i {
+    font-size: 2rem;
+    color: #a9aaad;
+}
+
+div.form input[type="submit"] {
+    width: 20%;
+    padding: 0;
+    text-transform: uppercase;
+    background-color: #f49a14;
+    color: #fff;
+}
+
+/*Form end*/
+/*Contact start*/
+section.contact {
+    margin-top: 50px;
+}
+
+section.contact li {
+    display: inline-block;
+    list-style: none;
+}
+section.contact ul {
+    padding: 0;
+}
+
+section.contact a {
+    background-color: #828282;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+section.contact a:hover {
+    background-color: #4a639a;
+}
+/*Contact end*/
+
+@media (max-width: 767px) {
+    article.my-skills .block img {
+        left: 24%;
+    }
+    div.greeting .about p:first-child {
+        font-size: 2rem;
+        line-height: normal;
+    }
+    div.greeting .about {
+        width: 100%;
+        margin-top: 14.5rem;
+    }
+    section.my-work h3 {
+        width: 100%;
+    }
+    .navbar-default {
+        border: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+    .container>.navbar-header {
+        background-color: #0c0c0c;
+        border-bottom: none;
+    }
+
+    .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    nav li {
+        background-color: #0c0c0c;
+    }
+
+    .navbar-default .navbar-collapse {
+        background-color: #f49a14;
+        border: none;
+    }
+    section.my-work .img {
+        width: 100%;
+    }
+
+    div.background-container {
+        padding-top: 50px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    article.my-skills .block img {
+        left: 17%;
+    }
+    div.form input[type="submit"] {
+        width: 100%;
+    }
+
+}
